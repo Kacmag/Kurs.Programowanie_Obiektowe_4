@@ -1,4 +1,4 @@
-# Install script for directory: /home/ljaniec/Documents/Uczelnia/2021_2022/KPO/templates/kpo-zad4
+# Install script for directory: /mnt/s/PWR_BRRR/Git_PO_Poniedzialek/kpo-zad5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,13 +38,13 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/ljaniec/Documents/Uczelnia/2021_2022/KPO/templates/kpo-zad4/build/_deps/doctest-build/cmake_install.cmake")
-endif()
+  # Include the install script for each subdirectory.
+  include("/mnt/s/PWR_BRRR/Git_PO_Poniedzialek/kpo-zad5/build/LinearEquations/cmake_install.cmake")
+  include("/mnt/s/PWR_BRRR/Git_PO_Poniedzialek/kpo-zad5/build/LZespolona/cmake_install.cmake")
+  include("/mnt/s/PWR_BRRR/Git_PO_Poniedzialek/kpo-zad5/build/matrix/cmake_install.cmake")
+  include("/mnt/s/PWR_BRRR/Git_PO_Poniedzialek/kpo-zad5/build/target/cmake_install.cmake")
+  include("/mnt/s/PWR_BRRR/Git_PO_Poniedzialek/kpo-zad5/build/vector/cmake_install.cmake")
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/ljaniec/Documents/Uczelnia/2021_2022/KPO/templates/kpo-zad4/build/tests/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ljaniec/Documents/Uczelnia/2021_2022/KPO/templates/kpo-zad4/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/s/PWR_BRRR/Git_PO_Poniedzialek/kpo-zad5/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
